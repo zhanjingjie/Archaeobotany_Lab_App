@@ -1,17 +1,18 @@
 require 'spec_helper'
 
 describe "StaticPages" do
+    subject { page }
+
+    let(:base_title) {"UC Berkeley McCown Archaeobotany Laboratory"}
+
   	describe "Home page" do
-  		it "should have the lab title" do
-  			visit '/static_pages/home'
-  			page.should have_content('McCown UC Berkeley Archaeobotany Laboratory')
-  		end
+      before { visit '/static_pages/home' }
+  		it { should have_selector('title', text: "#{base_title} | Home") }
   	end
+  	
 
   	describe "Research page" do
-  		it "should have the content 'Current Research'" do
-  			visit '/static_pages/research'
-  			page.should have_content('Current Research')
-  		end
+      before { visit '/static_pages/research' }
+  		it { should have_selector('title', text: "#{base_title} | Research") }
   	end
 end
