@@ -1,13 +1,13 @@
 ArchaeobotanyLabApp::Application.routes.draw do
-  get "static_pages/home"
+  root to: 'static_pages#home'
 
-  get "static_pages/research"
+  match '/research', to: 'static_pages#research'
 
-  get "static_pages/resource"
+  match '/resource', to: 'static_pages#resource'
 
-  get "static_pages/people"
+  match '/people', to: 'static_pages#people'
 
-  get "static_pages/contact"
+  match '/contact', to: 'static_pages#contact'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
