@@ -5,6 +5,7 @@
 $CalGold: #BB9F89;
 $CalBlue: #2D61BD;
 $LightGray: #999;
+$FooterGray: #f5f5f5;
 
 html {
 	overflow-y: scroll;
@@ -81,10 +82,13 @@ p {
 footer {
 	margin-top: 45px;
 	padding-top: 20px;
+
+	padding-bottom: 200px;
+	background-color: $FooterGray;
 	border-top: 1px solid #eaeaea;
 	color: $LightGray;
 	a {
-		color: #555;
+		color: $LightGray;
 		&:hover {
 			color: $CalGold;
 			text-decoration: none;
@@ -111,3 +115,4 @@ footer {
 		margin-top: 20px;
 	}
 }
+
