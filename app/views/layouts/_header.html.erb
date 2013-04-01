@@ -1,7 +1,8 @@
 <header>
 	<div class="navbar navbar-fixed-top">
 		<div class="navbar-inner">
-			<div class="container">
+			<%= link_to "McCown Archaeobotany Laboratary", root_path, id:"logo" %>
+			<div class="container-fluid">
 				<nav>
 					<ul class="nav pull-right">
 						<li><%= link_to "Home", root_path %></li>
@@ -15,9 +16,21 @@
 		</div>
 	</div>
 
-	<div class="center hero-unit">
+	<div class="center container-fluid hero-unit">
+		<div class="row-fluid">
+			<div class="span3">
+				<ul class="unstyled pull-left">
+					<li><%= link_to "Laboratary Reports", '#' %></li>
+					<li><%= link_to "Contact Information", '#' %></li>
+					<li><%= link_to "Haikus", '#' %></li>
+				</ul>
+			</div>
+			<div class="span9">
+			</div>
+		<!--
 		<h1>Archaeobotany Laboratary.</h1>
 		<h2>This is a homepage for all information and resources in UC Berkeley Archaeobotany Laboratary.</h2>
 		<%= link_to "See more images", '#', class: "btn btn-large" %>
+	-->
 	</div>
 </header>
