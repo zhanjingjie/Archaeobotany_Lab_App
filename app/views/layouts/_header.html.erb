@@ -16,20 +16,33 @@
 		</div>
 	</div>
 
-	<div class="center container-fluid hero-unit">
+	<div class="container-fluid hero-unit">
 		<div class="row-fluid">
-			<div class="span3">
+			<div class="span4">
+
+				<!-- The left side quick links. -->
 				<!--
-				<ul class="unstyled pull-left">
+				<ul class="unstyled">
 					<li><%= link_to "Laboratary Reports", '#' %></li>
 					<li><%= link_to "Contact Information", '#' %></li>
 					<li><%= link_to "Haikus", '#' %></li>
 				</ul>
 				-->
+				<section>
+					<h3>Our lab reports are important.</h3>
+					<p>We have more than 60 reports over more 50 years from all over the globe.</p>
+					<%= link_to "Learn more", '#', class: "btn btn-large btn-primary" %>
+				</section>
+				<section>
+					<h3>Haikus</h3>
+					<p>We write haiku---short Japanese poetry in spare time.</p>
+					<%= link_to "Learn more", '#', class: "btn btn-large btn-primary" %>
+				</section>
+				
 			</div>
-			<div class="span9">
-
-				<div id="myCarousel" class="carousel slide">
+			<div class="span8">
+				<!-- The right side carousel of pictures.-->
+				<div id="myCarousel" class="carousel slide" data-interval="1000">
   					<ol class="carousel-indicators">
    						<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
     					<li data-target="#myCarousel" data-slide-to="1"></li>
@@ -39,12 +52,30 @@
   					<div class="carousel-inner">
     					<div class="active item">
     						<%= image_tag "flotation.jpg", alt:"Floatation in the farm" %>
+    						<div class="carousel-caption">
+    							<h4>Flotation</h4>
+    							<p>
+    								Flotation scene taken in the wild.
+    							</p>
+    						</div>
     					</div>
     					<div class="item">
-    						<%= image_tag "group_lab.JPG", alt:"Group picture in the lab" %>
+    						<%= image_tag "GroupPic5.JPG", alt:"Group picture in the lab" %>
+    						<div class="carousel-caption">
+    							<h4>Archaeobotany Lab Group</h4>
+    							<p>
+    								Archaeobotany lab researchers meeting in the lab.
+    							</p>
+    						</div>
     					</div>
    	 					<div class="item">
-   	 						<%= image_tag "group_out.JPG", alt:"Group picture on campus" %>
+   	 						<%= image_tag "GroupPic9.JPG", alt:"Group picture on campus" %>
+   	 						<div class="carousel-caption">
+   	 							<h4>Archaeobotany Lab Group</h4>
+   	 							<p>
+   	 								Taken picture on UC Berkeley beautiful campus.
+   	 							</p>
+   	 						</div>
    	 					</div>
   					</div>
   					<!-- Carousel nav -->

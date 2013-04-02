@@ -35,22 +35,27 @@ textarea {
 
 h1, h2, h3, h4, h5, h6 {
 	line-height: 1;
+	letter-spacing: -1.5px;
+	margin-bottom: 15px;
+	text-align: center;
 }
 
 h1 {
 	font-size: 3em;
-	letter-spacing: -2px;
-	margin-bottom: 30px;
-	text-align: center;
 }
 
 h2 {
-	font-size: 1.7em;
-	letter-spacing: -1px;
-	margin-bottom: 30px;
-	text-align: center;
-	font-weight: normal;
-	color: $LightGray;
+	font-size: 2.5em;
+}
+
+h3 {
+	font-size: 2em;
+	text-align: left;
+}
+
+h4 {
+	font-size: 1.5em;
+	text-align: left;
 }
 
 p {
@@ -61,10 +66,11 @@ p {
 
 /* header */
 
+
 #logo {
 	float: left;
 	margin-right: 10px;
-	font-size: 1.5em;
+	font-size: 1.7em;
 	color: white;
 	letter-spacing: -1px;
 	padding: 9px 20px 0px 30px;
@@ -74,6 +80,28 @@ p {
 		color: white;
 		text-decoration: none;
 	}
+}
+
+#myCarousel {
+	border: 2px solid $LightGray;
+	/* It's a hack because of a bug in the bootstrap fluid offset.*/
+	margin-left: 128px;
+	h4 {
+		margin-bottom: 5px;
+	}
+	p {
+		font-size: 1em;
+		line-height: 1em;
+	}
+}
+
+.carousel-indicators {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	z-index: 5;
+	margin: 0;
+	list-style: none;
 }
 
 
@@ -86,6 +114,7 @@ footer {
 	padding-bottom: 200px;
 	background-color: $FooterGray;
 	border-top: 1px solid #eaeaea;
+	border-width: 2px;
 	color: $LightGray;
 	a {
 		color: $LightGray;
