@@ -19,30 +19,23 @@
 	<div class="container-fluid hero-unit">
 		<div class="row-fluid">
 			<div class="span4">
+				<div id="quickAccess">
+					<section id="section1">
+						<h2>Laboratary reports</h2>
+						<p>We have more than 60 reports over more 50 years from all over the globe.</p>
+						<%= link_to "Learn more", '#', class: "btn btn-middle btn-primary" %>
+					</section>
 
-				<!-- The left side quick links. -->
-				<!--
-				<ul class="unstyled">
-					<li><%= link_to "Laboratary Reports", '#' %></li>
-					<li><%= link_to "Contact Information", '#' %></li>
-					<li><%= link_to "Haikus", '#' %></li>
-				</ul>
-				-->
-				<section>
-					<h3>Our lab reports are important.</h3>
-					<p>We have more than 60 reports over more 50 years from all over the globe.</p>
-					<%= link_to "Learn more", '#', class: "btn btn-large btn-primary" %>
-				</section>
-				<section>
-					<h3>Haikus</h3>
-					<p>We write haiku---short Japanese poetry in spare time.</p>
-					<%= link_to "Learn more", '#', class: "btn btn-large btn-primary" %>
-				</section>
-				
+					<section id="section2">
+						<h2>Haikus</h2>
+						<p>We write haikus---short Japanese poetries in spare time.</p>
+						<%= link_to "Learn more", '#', class: "btn btn-middle btn-primary" %>
+					</section>
+				</div>
 			</div>
 			<div class="span8">
 				<!-- The right side carousel of pictures.-->
-				<div id="myCarousel" class="carousel slide" data-interval="1000">
+				<div id="myCarousel" class="carousel slide">
   					<ol class="carousel-indicators">
    						<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
     					<li data-target="#myCarousel" data-slide-to="1"></li>

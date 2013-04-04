@@ -59,7 +59,7 @@ h4 {
 }
 
 p {
-	font-size: 1.1em;
+	font-size: 1em;
 	line-height: 1.7em;
 }
 
@@ -82,10 +82,33 @@ p {
 	}
 }
 
+#quickAccess {
+	margin-left: 60px;
+	section {
+		margin-top: 10px;
+		h2 {
+			text-align: left;
+			font-size: 3.1em;
+			color: #308CCF;
+			font-family: "Open Sans","Helvetica Neue","Helvetica",Arial,Verdana,sans-serif;
+			font-weight: lighter;
+
+		}
+		p {
+			font-size: 1.3em;
+			line-height: 1.2em;
+			color: #394755;
+		}
+	}
+	#section2 {
+		margin-top: 40px;
+	}
+}
+
 #myCarousel {
 	border: 2px solid $LightGray;
 	/* It's a hack because of a bug in the bootstrap fluid offset.*/
-	margin-left: 128px;
+	margin: 0 60px 0 100px;
 	h4 {
 		margin-bottom: 5px;
 	}
@@ -93,15 +116,14 @@ p {
 		font-size: 1em;
 		line-height: 1em;
 	}
-}
-
-.carousel-indicators {
-	position: absolute;
-	top: 15px;
-	right: 15px;
-	z-index: 5;
-	margin: 0;
-	list-style: none;
+	.carousel-indicators {
+		position: absolute;
+		top: 15px;
+		right: 15px;
+		z-index: 5;
+		margin: 0;
+		list-style: none;
+	}
 }
 
 
