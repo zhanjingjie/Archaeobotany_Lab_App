@@ -70,6 +70,10 @@ p {
 
 .navbar {
 	min-width: $ScreenSize;
+	li {
+		font-size: 15px;
+		font-width: bold;
+	}
 }
 
 #logo {
@@ -123,14 +127,6 @@ p {
 	p {
 		font-size: 1em;
 		line-height: 1em;
-	}
-	.carousel-indicators {
-		position: absolute;
-		top: 15px;
-		right: 15px;
-		z-index: 5;
-		margin: 0;
-		list-style: none;
 	}
 }
 

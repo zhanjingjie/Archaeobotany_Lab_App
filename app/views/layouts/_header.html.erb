@@ -31,24 +31,19 @@
 					<section id="section1">
 						<h3>Current Research</h3>
 						<p>The UC Berkeley McCown Archaeobotany laboratary conducts archaeological and archaeobotanical research spanning three continents and diverse research questions.</p>
-						<%= link_to "Learn more", '#', class: "btn btn-middle btn-primary" %>
+						<%= link_to "Learn more", 'research_path', class: "btn btn-middle btn-primary" %>
 					</section>
 
 					<section id="section2">
 						<h3>People</h3>
 						<p>See the faculty, graduate students, undergraduates, and visiting scholars who are currently in the laboratary.</p>
-						<%= link_to "Learn more", '#', class: "btn btn-middle btn-primary" %>
+						<%= link_to "Learn more", 'people_path', class: "btn btn-middle btn-primary" %>
 					</section>
 				</div>
 			</div>
 			<div class="span8">
 				<!-- The right side carousel of pictures.-->
 				<div id="myCarousel" class="carousel slide">
-  					<ol class="carousel-indicators">
-   						<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    					<li data-target="#myCarousel" data-slide-to="1"></li>
-    					<li data-target="#myCarousel" data-slide-to="2"></li>
-  					</ol>
   					<!-- Carousel items -->
   					<div class="carousel-inner">
     					<div class="active item">
@@ -88,3 +83,10 @@
 		</div>
 	</div>
 </header>
+
+<!-- JavaScropt code to make the carousel slide. -->
+<script>
+$(function(){
+  $('#myCarousel').carousel();
+});
+</script>
