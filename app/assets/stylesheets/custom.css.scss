@@ -6,6 +6,7 @@ $CalGold: #BB9F89;
 $CalBlue: #2D61BD;
 $LightGray: #999;
 $FooterGray: #f5f5f5;
+$ScreenSize: 1365px;
 
 html {
 	overflow-y: scroll;
@@ -13,6 +14,7 @@ html {
 
 body {
 	padding-top: 60px;
+	min-width: $ScreenSize;
 }
 
 section {
@@ -49,7 +51,7 @@ h2 {
 }
 
 h3 {
-	font-size: 2em;
+	font-size: 2.1em;
 	text-align: left;
 }
 
@@ -66,6 +68,9 @@ p {
 
 /* header */
 
+.navbar {
+	min-width: $ScreenSize;
+}
 
 #logo {
 	float: left;
@@ -85,30 +90,33 @@ p {
 #quickAccess {
 	margin-left: 60px;
 	section {
-		margin-top: 10px;
-		h2 {
+		h3 {
 			text-align: left;
-			font-size: 3.1em;
 			color: #308CCF;
 			font-family: "Open Sans","Helvetica Neue","Helvetica",Arial,Verdana,sans-serif;
-			font-weight: lighter;
+			font-weight: Bolder;
 
 		}
 		p {
-			font-size: 1.3em;
-			line-height: 1.2em;
+			font-size: 1.2em;
+			line-height: 1.3em;
 			color: #394755;
+			word-spacing: 2px;
 		}
 	}
+	#section1 {
+		margin-top: 5px;
+	}
 	#section2 {
-		margin-top: 40px;
+		margin-top: 30px;
 	}
 }
 
 #myCarousel {
+	padding: 5px;
 	border: 2px solid $LightGray;
 	/* It's a hack because of a bug in the bootstrap fluid offset.*/
-	margin: 0 60px 0 100px;
+	margin: 0 60px 0 140px;
 	h4 {
 		margin-bottom: 5px;
 	}

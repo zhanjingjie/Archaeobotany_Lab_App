@@ -1,16 +1,24 @@
 <header>
 	<div class="navbar navbar-fixed-top">
 		<div class="navbar-inner">
-			<%= link_to "McCown Archaeobotany Laboratary", root_path, id:"logo" %>
+			<%= link_to "UC Berkeley McCown Archaeobotany Laboratary", root_path, id:"logo" %>
 			<div class="container-fluid">
-				<nav>
-					<ul class="nav pull-right">
+				<nav class="pull-right">
+					<ul class="nav">
 						<li><%= link_to "Home", root_path %></li>
+						<li class="divider-vertical"></li>
 						<li><%= link_to "Research", research_path %></li>
+						<li class="divider-vertical"></li>
 						<li><%= link_to "People", people_path %></li>
+						<li class="divider-vertical"></li>
 						<li><%= link_to "Resource", resource_path %></li>
+						<li class="divider-vertical"></li>
 						<li><%= link_to "Contact", contact_path %></li>
+						<li class="divider-vertical"></li>
 					</ul>
+					<form class="navbar-search">
+  						<input type="text" class="search-query" placeholder="Search">
+					</form>
 				</nav>
 			</div>
 		</div>
@@ -21,14 +29,14 @@
 			<div class="span4">
 				<div id="quickAccess">
 					<section id="section1">
-						<h2>Laboratary reports</h2>
-						<p>We have more than 60 reports over more 50 years from all over the globe.</p>
+						<h3>Current Research</h3>
+						<p>The UC Berkeley McCown Archaeobotany laboratary conducts archaeological and archaeobotanical research spanning three continents and diverse research questions.</p>
 						<%= link_to "Learn more", '#', class: "btn btn-middle btn-primary" %>
 					</section>
 
 					<section id="section2">
-						<h2>Haikus</h2>
-						<p>We write haikus---short Japanese poetries in spare time.</p>
+						<h3>People</h3>
+						<p>See the faculty, graduate students, undergraduates, and visiting scholars who are currently in the laboratary.</p>
 						<%= link_to "Learn more", '#', class: "btn btn-middle btn-primary" %>
 					</section>
 				</div>
