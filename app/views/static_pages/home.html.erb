@@ -1,19 +1,28 @@
 <%provide(:title, 'Home') %>
 <div class="container-fluid">
+	<!-- You are at Home-->
+	<ul class="breadcrumb">
+  		<li class="active">Home</li>
+	</ul>
+
 	<div class="row-fluid">
 		<div class="span4">
 			<h2>Laboratory Reports</h2>
 			<p>
 				Our laboratory and methodological expertise is pathleoethnobotany or archaeobotany--the study of plants used by humans in the past. The main work in the laboratory is with macrobotanical remains (e.g. seeds and tubers) but also on wood as well. Collaboration with the UC Berkeley Archaeologocal Research Facility also enables the laboratory to undertake microbotanical projects, including but not limited to the investigation of phytolith and starch remains.
 			</p>
-			<%= link_to "Learn more",'#', class: "btn btn-mini" %>
+			<p>
+				<%= link_to "View details >>",'#', class: "btn btn-mini" %>
+			</p>
 		</div>
 		<div class="span4">
 			<h2>Some Header</h2>
 			<p>
 				Professor Hastorf directs the UCB McCown Archaeobotany Laboratory where a series of analytical projects are going on. Students working here have a chance to join current laboratory and field projects. We include undergraduates, graduates, and postdoctoral researchers in all facets of our research.
 			</p>
-			<%= link_to "Learn more", 'contact_path', class: "btn btn-mini" %>
+			<p>
+				<%= link_to "View details >>", 'contact_path', class: "btn btn-mini" %>
+			</p>
 		</div>
 		<div class="span4">
 			<h2>Flotation (and Haikus)</h2>
@@ -34,7 +43,9 @@
 					<small>Anthony Thwaite in <cite title="Source Title">The Guardian August 4, 2007</cite></small>
 				</p>
 			</blockquote>
-			<%= link_to "Learn more", '#', class: "btn btn-mini" %>
+			<p>
+				<%= link_to "View details >>", '#', class: "btn btn-mini" %>
+			</p>
 		</div>
 	</div>
 </div>
