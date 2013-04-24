@@ -4,16 +4,16 @@
 			<%= link_to "UC Berkeley McCown Archaeobotany Laboratary", root_path, id:"logo" %>
 			<div class="container-fluid">
 				<nav class="pull-right">
-					<ul class="nav">
-						<li class="<%= 'active' if current_page?(root_path) %>"><%= link_to "Home", root_path %></li>
+					<ul class="nav" id="navigation">
+						<li class="nav-link <%= 'active' if current_page?(root_path) %>"><%= link_to "Home", root_path %></li>
 						<li class="divider-vertical"></li>
-						<li class="<%= 'active' if current_page?(research_path) %>"><%= link_to "Research", research_path %></li>
+						<li class="nav-link <%= 'active' if current_page?(research_path) %>"><%= link_to "Research", research_path %></li>
 						<li class="divider-vertical"></li>
-						<li class="<%= 'active' if current_page?(people_path) %>"><%= link_to "People", people_path %></li>
+						<li class="nav-link <%= 'active' if current_page?(people_path) %>"><%= link_to "People", people_path %></li>
 						<li class="divider-vertical"></li>
-						<li class="<%= 'active' if current_page?(resource_path) %>"><%= link_to "Resource", resource_path %></li>
+						<li class="nav-link <%= 'active' if current_page?(resource_path) %>"><%= link_to "Resource", resource_path %></li>
 						<li class="divider-vertical"></li>
-						<li class="<%= 'active' if current_page?(contact_path) %>"><%= link_to "Contact", contact_path %></li>
+						<li class="nav-link <%= 'active' if current_page?(contact_path) %>"><%= link_to "Contact", contact_path %></li>
 						<li class="divider-vertical"></li>
 					</ul>
 					<form class="navbar-search">
