@@ -7,6 +7,7 @@ $CalBlue: #2D61BD;
 $LightGray: #999;
 $FooterGray: #f5f5f5;
 $ScreenSize: 1365px;
+$MaxSize: 1500px;
 
 html {
 	overflow-y: scroll;
@@ -15,7 +16,7 @@ html {
 body {
 	padding-top: 60px;
 	min-width: $ScreenSize;
-	max-width: $ScreenSize;
+	max-width: $MaxSize;
 }
 
 section {
@@ -73,7 +74,7 @@ p {
 
 .navbar {
 	min-width: $ScreenSize;
-	max-width: $ScreenSize;
+	max-width: $MaxSize;
 }
 
 #navigation {
