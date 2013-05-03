@@ -72,6 +72,11 @@ p {
 
 /* header */
 
+header .hero-unit {
+	background: #f8f8f8 url(app/assets/images/pattern.jpg) left top repeat;
+	box-shadow: 0 5px 15px 0 rgba(0,0,0,.05) inset, 0 -5px 15px 0 rgba(0,0,0,.05) inset;
+}
+
 .navbar {
 	min-width: $ScreenSize;
 	max-width: $MaxSize;
@@ -182,11 +187,9 @@ p {
 footer {
 	margin-top: 45px;
 	padding-top: 20px;
-
 	padding-bottom: 200px;
-	background-color: $FooterGray;
-	border-top: 1px solid #eaeaea;
-	border-width: 2px;
+	background: #f8f8f8 url(app/assets/images/pattern.jpg) left top repeat;
+	box-shadow: 0 5px 15px 0 rgba(0,0,0,.05) inset;
 	color: $LightGray;
 	a {
 		color: $LightGray;
