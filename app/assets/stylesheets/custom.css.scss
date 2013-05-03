@@ -57,7 +57,10 @@ h3 {
 
 h4 {
 	font-size: 1.5em;
-	text-align: left;
+}
+
+h5 {
+	font-size: 1.15em;
 }
 
 p {
@@ -74,7 +77,9 @@ p {
 }
 
 #navigation {
-	li a { font-size: 14px;}
+	li a { 
+		font-size: 14px;
+	}
 	.active {background-color: black; border-bottom: 3px solid $CalBlue;}
 	.nav-link {
 		padding-left: 15px;
@@ -135,6 +140,7 @@ p {
 	/* It's a hack because of a bug in the bootstrap fluid offset.*/
 	margin: 0 60px 0 40px;
 	h4 {
+		text-align: left;
 		margin-bottom: 5px;
 	}
 	p {
@@ -153,13 +159,20 @@ p {
 
 #content #home {
 	#home-content-left {
-		border-right: 1px solid $LightGray;
+		// Hard code to let both borders have same length
+		padding-bottom: 80px;
+		border-right: 1px dotted $LightGray;
 	}
 	#home-content-right {
-		border-left: 1px solid $LightGray;
+		border-left: 1px dotted $LightGray;
+		// Hard code to let the link compatible with the haiku
+		#haiku-link { padding: 20px 0px 0px 80px;}
 	}
 }
 
+#content #research {
+	.row-fluid { padding-top: 30px;}
+}
 
 
 
