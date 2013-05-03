@@ -166,13 +166,12 @@ header .hero-unit {
 #content #home {
 	#home-content-left {
 		// Hard code to let both borders have same length
-		padding-bottom: 80px;
+		padding-bottom: 100px;
 		border-right: 1px dotted $LightGray;
 	}
 	#home-content-right {
+		padding-left: 40px;
 		border-left: 1px dotted $LightGray;
-		// Hard code to let the link compatible with the haiku
-		#haiku-link { padding: 20px 0px 0px 80px;}
 	}
 }
 
