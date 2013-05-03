@@ -4,6 +4,7 @@
 
 $CalGold: #BB9F89;
 $CalBlue: #2D61BD;
+$MainContentColor: #5d5d5d;
 $LightGray: #999;
 $FooterGray: #f5f5f5;
 $ScreenSize: 1365px;
@@ -17,6 +18,11 @@ body {
 	padding-top: 60px;
 	min-width: $ScreenSize;
 	max-width: $MaxSize;
+
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	color: $MainContentColor;
+	line-height: 20px;
 }
 
 section {
@@ -38,6 +44,10 @@ textarea {
 /* typography */
 
 h1, h2, h3, h4, h5, h6 {
+	font-family: 'Droid Sans', Helvetica, Arial, sans-serif;
+	font-weight: lighter;
+	color: $MainContentColor;
+	text-shadow: 0 1px 0 rgba(255,255,255,.7);
 	line-height: 1;
 	letter-spacing: -1.5px;
 	margin-bottom: 15px;
@@ -64,10 +74,6 @@ h5 {
 	font-size: 1.15em;
 }
 
-p {
-	font-size: 1em;
-	line-height: 1.7em;
-}
 
 
 /* header */
@@ -120,16 +126,9 @@ header .hero-unit {
 	section {
 		h3 {
 			text-align: left;
-			color: #308CCF;
-			font-family: "Open Sans","Helvetica Neue","Helvetica",Arial,Verdana,sans-serif;
-			font-weight: normal;
-
 		}
 		p {
 			font-size: 1.2em;
-			line-height: 1.3em;
-			color: #394755;
-			word-spacing: 2px;
 		}
 	}
 	#section1 {
@@ -148,6 +147,7 @@ header .hero-unit {
 	h4 {
 		text-align: left;
 		margin-bottom: 5px;
+		letter-spacing: normal;
 	}
 	p {
 		font-size: 1em;
@@ -170,7 +170,7 @@ header .hero-unit {
 		border-right: 1px dotted $LightGray;
 	}
 	#home-content-right {
-		padding-left: 40px;
+		padding-left: 50px;
 		border-left: 1px dotted $LightGray;
 	}
 }
