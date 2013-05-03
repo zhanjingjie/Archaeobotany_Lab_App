@@ -15,6 +15,7 @@ html {
 body {
 	padding-top: 60px;
 	min-width: $ScreenSize;
+	max-width: $ScreenSize;
 }
 
 section {
@@ -52,7 +53,6 @@ h2 {
 
 h3 {
 	font-size: 2.1em;
-	text-align: left;
 }
 
 h4 {
@@ -70,11 +70,12 @@ p {
 
 .navbar {
 	min-width: $ScreenSize;
+	max-width: $ScreenSize;
 }
 
 #navigation {
 	li a { font-size: 14px;}
-	.active {background-color: black;}
+	.active {background-color: black; border-bottom: 3px solid $CalBlue;}
 	.nav-link {
 		padding-left: 15px;
 		padding-right: 15px;
@@ -141,6 +142,25 @@ p {
 		line-height: 1em;
 	}
 }
+
+
+
+/* body */
+
+#content p {
+	padding: 10px 20px 0 20px;
+}
+
+#content #home {
+	#home-content-left {
+		border-right: 1px solid $LightGray;
+	}
+	#home-content-right {
+		border-left: 1px solid $LightGray;
+	}
+}
+
+
 
 
 /* footer */
