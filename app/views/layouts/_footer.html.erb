@@ -1,14 +1,49 @@
 <footer class="footer">
-	<small>
-		<p>Copyright 2013 UC Berkeley McCown Archaeobotany Laboratary</p>
-	</small>
-	<nav>
-		<ul>
-			<li><%= link_to "Contact", contact_path %></li>
-			<li><a href="http://anthropology.berkeley.edu/">Department of Anthropology</a></li>
-			<li><a href="http://berkeley.edu/">UC Berkeley</a></li>
-		</ul>
-		<%= image_tag "berkeley.png", alt:"UC Berkeley logo", id: "image" %>
-	</nav>
+	<div class="container-fluid">
+		<div class="row-fluid">
+			<div class="widget span3">
+				<h5>ABOUT US</h5>
+				<p>
+					We are a group of dedicated researchers located in UC Berkeley, working on archaeobotany (ancient plantation) and archaeology. 
+				</p>
+			</div>
+			<div class="widget span3">
+				<h5>LATEST NEWS</h5>
+				<p>Professor Hastorf is on a trip to Europe to finish her book. And she will be back in half a year.</p>
+			</div>
+			<div class="widget span3">
+				<h5>PHOTOS</h5>
+				<p></p>
+			</div>
+			<div class="widget span3">
+				<h5>CONTACT US</h5>
+				<p>
+					<address>
+  						Address: 65 Kroeber Hall, University of California, Berkeley, CA 94720-3710<br>
+  						Phone: (510) 643-1112<br>
+  						Laboratary Director: Professor Christine Hastorf<br>
+  						Email: <a href="mailto:hastorf@berkeley.edu">hastorf@berkeley.edu</a>
+					</address>
+				</p>
+			</div>
+		</div>
+		<div class="row-fluid">
+			<div class="span5">
+				<small>
+					<p>Copyright 2013 UC Berkeley McCown Archaeobotany Laboratary</p>
+				</small>
+			</div>
+			<div class="span7">
+				<nav>
+					<ul>
+						<li><%= link_to "Contact", contact_path %></li>
+						<li><a href="http://anthropology.berkeley.edu/">Department of Anthropology</a></li>
+						<li><a href="http://berkeley.edu/">UC Berkeley</a></li>
+					</ul>
+					<%= image_tag "berkeley.png", alt:"UC Berkeley logo", id: "image" %>
+				</nav>
+			</div>
+		</div>
+	</div>
 	
 </footer>
