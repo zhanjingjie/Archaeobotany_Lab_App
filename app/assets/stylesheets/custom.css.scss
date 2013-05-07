@@ -193,7 +193,8 @@ footer {
 	box-shadow: 0 5px 15px 0 rgba(0,0,0,.05) inset;
 	color: $LightGray;
 	.row-fluid { padding-top: 30px; padding-bottom: 20px;}
-	#widgets { border-bottom: 1px dashed #ddd;
+	#widgets { 
+		border-bottom: 1px dashed #ddd;
 		.widget {
 			text-align: left;
 			p {
