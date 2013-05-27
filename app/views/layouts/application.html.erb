@@ -11,7 +11,9 @@
 	<%= render 'layouts/header' %>
 	<div class="container-fluid" id="content">
 		<%= render 'layouts/pic-header' %>
-		<%= yield %>
+		<div id="body-content">
+			<%= yield %>
+		</div>
 	</div>
 	<%= render 'layouts/footer' %>
 </body>
