@@ -16,9 +16,6 @@ html {
 
 body {
 	padding-top: 60px;
-	min-width: $ScreenSize;
-	max-width: $MaxSize;
-
 	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 	font-size: 12px;
 	color: $MainContentColor;
@@ -78,14 +75,13 @@ h5 {
 
 /* header */
 
-header .hero-unit {
+#pic-header .hero-unit {
 	background: #f8f8f8 url(app/assets/images/pattern.jpg) left top repeat;
 	box-shadow: 0 5px 15px 0 rgba(0,0,0,.05) inset, 0 -5px 15px 0 rgba(0,0,0,.05) inset;
 }
 
 .navbar {
 	min-width: $ScreenSize;
-	max-width: $MaxSize;
 }
 
 #navigation {
@@ -159,8 +155,14 @@ header .hero-unit {
 
 /* body */
 
-#content p {
-	padding: 10px 20px 0 20px;
+#content {
+    min-width: $ScreenSize;
+	max-width: $MaxSize;
+	// Make content always in the middle
+	margin: 0 auto;
+	p {
+		padding: 10px 20px 0 20px;
+	}
 }
 
 #content #home {
@@ -191,7 +193,7 @@ footer {
 	padding-top: 20px;
 	padding-bottom: 20px;
 	min-width: $ScreenSize;
-	max-width: $MaxSize;
+	//max-width: $MaxSize;
 	background: #f8f8f8 url(app/assets/images/pattern.jpg) left top repeat;
 	box-shadow: 0 5px 15px 0 rgba(0,0,0,.05) inset;
 	color: $LightGray;
