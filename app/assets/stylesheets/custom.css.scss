@@ -10,6 +10,15 @@ $FooterGray: #f5f5f5;
 $ScreenSize: 1365px;
 $MaxSize: 1500px;
 
+/* mixins, variables, etc. */ 
+$grayMediumLight: #eaeaea;
+
+@mixin box_sizing {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box; 
+}
+
 html {
 	overflow-y: scroll;
 }
@@ -193,7 +202,6 @@ footer {
 	padding-top: 20px;
 	padding-bottom: 20px;
 	min-width: $ScreenSize;
-	//max-width: $MaxSize;
 	background: #f8f8f8 url(app/assets/images/pattern.jpg) left top repeat;
 	box-shadow: 0 5px 15px 0 rgba(0,0,0,.05) inset;
 	color: $LightGray;
@@ -237,5 +245,14 @@ footer {
 		float: right;
 		margin-top: 20px;
 	}
+}
+
+/* Miscellaneous */
+.debug_dump {
+	clear: both;
+	float: left;
+	width: 100%;
+	margin: 45px 0px 45px 0px;
+	@include box-sizing;
 }
 

@@ -3,6 +3,7 @@ class StaticPagesController < ApplicationController
   end
 
   def research
+    @research = Research.find(1)
   end
 
   def resource
