@@ -201,7 +201,7 @@ footer {
 	margin-top: 45px;
 	padding-top: 20px;
 	padding-bottom: 20px;
-	min-width: $ScreenSize;
+	min-width: 1410px;
 	background: #f8f8f8 url(app/assets/images/pattern.jpg) left top repeat;
 	box-shadow: 0 5px 15px 0 rgba(0,0,0,.05) inset;
 	color: $LightGray;
@@ -252,7 +252,7 @@ footer {
 	clear: both;
 	float: left;
 	width: 100%;
-	margin: 45px 0px 45px 0px;
+	margin-top: 45px;
 	@include box-sizing;
 }
 
