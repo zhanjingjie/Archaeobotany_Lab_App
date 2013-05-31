@@ -1,7 +1,10 @@
 ArchaeobotanyLabApp::Application.routes.draw do
+
   root to: 'static_pages#home'
 
   match '/research', to: 'static_pages#research'
+  match '/addresearch', to: 'researches#new'
+  resources :researches
 
   match '/resource', to: 'static_pages#resource'
 
