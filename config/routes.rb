@@ -1,15 +1,13 @@
 ArchaeobotanyLabApp::Application.routes.draw do
 
-  root to: 'static_pages#home'
-
-  match '/research', to: 'static_pages#research'
-  match '/addresearch', to: 'researches#new'
   resources :researches
+  # Customize the routes name
+  match '/addresearch', to: 'researches#new'
 
+
+  root to: 'static_pages#home'
   match '/resource', to: 'static_pages#resource'
-
   match '/people', to: 'static_pages#people'
-
   match '/contact', to: 'static_pages#contact'
 
   # The priority is based upon order of creation:

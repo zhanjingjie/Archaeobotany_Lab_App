@@ -1,3 +1,20 @@
 <% provide(:title, 'Add Research') %>
-<h1>Add Research</h1>
-<p>Add basic research information here.</p>
+
+<div class="row">
+	<div class="span6 offset5">
+		<%= render 'shared/error_messages' %>
+		<h2>Add Research</h2>
+		<%= form_for(@research) do |f| %>
+			<%= f.label :name %>
+			<%= f.text_field :name %>
+
+			<%= f.label :keywords %>
+			<%= f.text_field :keywords %>
+
+			<%= f.label :text %>
+			<%= f.text_field :text %>
+
+			<%= f.submit "Add Research", class: "btn btn-large btn-primary" %>
+		<% end %>
+	</div>
+</div>

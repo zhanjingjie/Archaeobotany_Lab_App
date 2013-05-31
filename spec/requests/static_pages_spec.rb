@@ -11,10 +11,10 @@ describe "StaticPages" do
   	end
   	
 
-  	describe "Research page" do
-      before { visit research_path }
-  		it { should have_selector('title', text: "#{base_title} | Research") }
-  	end
+  	#describe "Research page" do
+    #  before { visit research_path }
+  	#	it { should have_selector('title', text: "#{base_title} | Research") }
+  	#end
 
     describe "Contact page" do
       before { visit contact_path }
