@@ -1,5 +1,11 @@
 ArchaeobotanyLabApp::Application.routes.draw do
 
+  get "users/show"
+
+  get "users/edit"
+
+  get "users/update"
+
   resources :researches
   # Customize the routes name
   match '/addresearch', to: 'researches#new'
