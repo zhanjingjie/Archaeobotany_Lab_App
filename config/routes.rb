@@ -2,8 +2,11 @@ ArchaeobotanyLabApp::Application.routes.draw do
 
   resources :users
   resources :researches
+  resources :sessions, only: [:new, :create, :destroy]
   # Customize the routes name
   match '/addresearch', to: 'researches#new'
+  match '/signin', to: 'sessions#new'
+  match '/signout', to: 'sessions#destroy', via: :delete
 
 
   root to: 'static_pages#home'
